@@ -607,6 +607,17 @@
       "hash": "acda5dda2c0c12b1eb0ce8adb8a7302dd2a4ff77"
     },
     {
+      "path": "packages/momentjs_moment.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/momentjs_moment.js?4e38cbc4dc376eb002e586682f309a2b2d58561c",
+      "sourceMap": "packages/momentjs_moment.js.map",
+      "sourceMapUrl": "/packages/4e38cbc4dc376eb002e586682f309a2b2d58561c.map",
+      "size": 410091,
+      "hash": "4e38cbc4dc376eb002e586682f309a2b2d58561c"
+    },
+    {
       "path": "packages/livedata.js",
       "where": "client",
       "type": "js",
@@ -666,9 +677,42 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/packages/global-imports.js?738d5022bb4e63169b78ef4e4bd51ef30a0ddff6",
-      "size": 956,
-      "hash": "738d5022bb4e63169b78ef4e4bd51ef30a0ddff6"
+      "url": "/packages/global-imports.js?92bab6744c8f15255ef7f454f72785e6f777a829",
+      "size": 1000,
+      "hash": "92bab6744c8f15255ef7f454f72785e6f777a829"
+    },
+    {
+      "path": "app/client/template.index.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/client/template.index.js?7749c24ca81db201dc61b8284313d7b50bb7714c",
+      "sourceMap": "app/client/template.index.js.map",
+      "sourceMapUrl": "/app/client/7749c24ca81db201dc61b8284313d7b50bb7714c.map",
+      "size": 993,
+      "hash": "7749c24ca81db201dc61b8284313d7b50bb7714c"
+    },
+    {
+      "path": "app/client/helper.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/client/helper.js?3e85693262e31780edc4df5d98ac8a8e1d1c12c4",
+      "sourceMap": "app/client/helper.js.map",
+      "sourceMapUrl": "/app/client/3e85693262e31780edc4df5d98ac8a8e1d1c12c4.map",
+      "size": 774,
+      "hash": "3e85693262e31780edc4df5d98ac8a8e1d1c12c4"
+    },
+    {
+      "path": "app/client/posts.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/client/posts.js?d2186bb934857249b52dd25a203c494dc2e2302c",
+      "sourceMap": "app/client/posts.js.map",
+      "sourceMapUrl": "/app/client/d2186bb934857249b52dd25a203c494dc2e2302c.map",
+      "size": 1074,
+      "hash": "d2186bb934857249b52dd25a203c494dc2e2302c"
     },
     {
       "path": "app/model/posts.js",
@@ -718,6 +762,12 @@
       "url": "/packages/velocity_html-reporter/lib/icon-time.png",
       "size": 2834,
       "hash": "868f492022a4dab0f1522de6aae0773531bc6e85"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "462d1c6af29ce49bbe7da5d6db19d65537922276"
     }
   ]
 }

@@ -292,6 +292,10 @@
       }
     },
     {
+      "sourceMap": "packages/momentjs_moment.js.map",
+      "path": "packages/momentjs_moment.js"
+    },
+    {
       "sourceMap": "packages/livedata.js.map",
       "path": "packages/livedata.js"
     },

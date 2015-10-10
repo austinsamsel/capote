@@ -9,6 +9,7 @@ Deps = Package.tracker.Deps;
 Date = Package['es5-shim'].Date;
 parseInt = Package['es5-shim'].parseInt;
 ECMAScript = Package.ecmascript.ECMAScript;
+moment = Package['momentjs:moment'].moment;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 _ = Package.underscore._;

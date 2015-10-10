@@ -1,3 +1,3 @@
-# Building Capote: Meteor & Mocha TDD (Part 1)
+# Building Capote: Meteor & Mocha TDD (Part 2)
 
-blog post: http://www.hightopsnyc.com/blog/building-capote.html
+blog post: ---

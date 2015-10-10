@@ -1,22 +1,47 @@
 => Using velocity:METEOR@1.2.0.2_1 as requested (overriding Meteor 1.2.0.2)
 
-[[[[[ ~/Dropbox/DEV/apps-meteor-0_1/capote_01 ]]]]]
+[[[[[ ~/Dropbox/DEV/apps-meteor-0_1/capote ]]]]]
 
 => Started proxy.
-[34mI20151010-12:25:59.497(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151010-12:25:59.500(-4)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151010-12:25:59.501(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151010-12:25:59.501(-4)? [39m** will still be sent to all clients.
-[34mI20151010-12:25:59.501(-4)? [39m**
-[34mI20151010-12:25:59.502(-4)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151010-12:25:59.502(-4)? [39m**
-[34mI20151010-12:25:59.502(-4)? [39m**   $ meteor remove autopublish
-[34mI20151010-12:25:59.503(-4)? [39m**
-[34mI20151010-12:25:59.504(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151010-12:25:59.504(-4)? [39m** for each collection that you want clients to see.
-[34mI20151010-12:25:59.505(-4)? [39m
-[34mI20151010-12:25:59.506(-4)? [39mMOCHA MIRROR LISTENING AT http://localhost:53569/
+[34mI20151010-14:18:40.225(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151010-14:18:40.227(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151010-14:18:40.227(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151010-14:18:40.228(-4)? [39m** will still be sent to all clients.
+[34mI20151010-14:18:40.228(-4)? [39m**
+[34mI20151010-14:18:40.228(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151010-14:18:40.228(-4)? [39m**
+[34mI20151010-14:18:40.229(-4)? [39m**   $ meteor remove autopublish
+[34mI20151010-14:18:40.229(-4)? [39m**
+[34mI20151010-14:18:40.229(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151010-14:18:40.230(-4)? [39m** for each collection that you want clients to see.
+[34mI20151010-14:18:40.230(-4)? [39m
+[34mI20151010-14:18:40.231(-4)? [39mMOCHA MIRROR LISTENING AT http://localhost:62385/
 => Started your app.
 
-=> App running at: http://localhost:53569/
-[34mI20151010-12:25:59.893(-4)? [39m[velocity] Established connection with Velocity.
+=> App running at: http://localhost:62385/
+[34mI20151010-14:18:40.713(-4)? [39m[velocity] Established connection with Velocity.
+[34mI20151010-14:18:44.325(-4)? [39mRunning mocha server tests
+=> Server modified -- restarting...                                   [34mI20151010-14:20:36.332(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151010-14:20:36.332(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151010-14:20:36.332(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151010-14:20:36.332(-4)? [39m** will still be sent to all clients.
+[34mI20151010-14:20:36.333(-4)? [39m**
+[34mI20151010-14:20:36.333(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151010-14:20:36.333(-4)? [39m**
+[34mI20151010-14:20:36.333(-4)? [39m**   $ meteor remove autopublish
+[34mI20151010-14:20:36.333(-4)? [39m**
+[34mI20151010-14:20:36.333(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151010-14:20:36.333(-4)? [39m** for each collection that you want clients to see.
+[34mI20151010-14:20:36.334(-4)? [39m
+[34mI20151010-14:20:36.765(-4)? [39mMOCHA MIRROR LISTENING AT http://localhost:62385/
+=> Meteor server restarted
+[34mI20151010-14:20:40.888(-4)? [39m[velocity] Established connection with Velocity.
+[34mI20151010-14:20:41.350(-4)? [39mRunning mocha server tests
+[34mI20151010-14:20:48.875(-4)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151010-14:21:21.992(-4)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151010-14:21:42.521(-4)? [39mRunning mocha server tests
+[34mI20151010-14:21:50.131(-4)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151010-14:25:19.629(-4)? [39mRunning mocha server tests
