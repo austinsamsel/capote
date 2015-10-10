@@ -1,0 +1,1 @@
+{"head":"","body":"","js":"\nTemplate.__checkName(\"mochaweb\");\nTemplate[\"mochaweb\"] = new Template(\"Template.mochaweb\", (function() {\n  var view = this;\n  return HTML.IFRAME({\n    src: function() {\n      return Spacebars.mustache(view.lookup(\"mochaWebIFrameURL\"));\n    }\n  });\n}));\n","bodyAttrs":{}}

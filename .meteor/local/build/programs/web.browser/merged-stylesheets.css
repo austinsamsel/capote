@@ -1,0 +1,641 @@
+#velocityOverlay {
+  z-index: 9000;
+  box-sizing: content-box;
+  position: fixed;
+  top: 0;
+  right: -780px;
+  width: 580px;
+  height: 100vh;
+  padding: 0 50px 0;
+  border-left: solid 3px rgba(74, 144, 226, 0.5);
+  background: #fff;
+  color: #222;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  overflow-y: auto;
+  transition: right 0.25s ease-in-out;
+}
+
+@keyframes velocity-anim-throb {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.6);
+  }
+}
+
+@-webkit-keyframes velocity-anim-throb {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.6);
+  }
+}
+
+#velocityOverlay * {
+  box-sizing: content-box;
+}
+
+#velocityOverlay.visible {
+  right: 0;
+}
+
+#velocityOverlay h1,
+#velocityOverlay h2,
+#velocityOverlay h3 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #222;
+}
+
+#velocityOverlay h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#velocityOverlay .velocity-btn-close {
+  border: 0 none;
+  background: transparent;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: #333333;
+  opacity: 0.1;
+  font-size: 40px;
+  transition: opacity 0.25s ease-in-out;
+}
+
+#velocityOverlay .velocity-btn-close:before {
+  content: '✖';
+}
+
+#velocityOverlay .velocity-btn-close:after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+}
+
+#velocityOverlay .velocity-btn-close:hover {
+  opacity: 0.6;
+}
+
+#velocityOverlay .velocity-logo {
+  position: relative;
+  color: transparent;
+  margin: 20px 0 20px 25px;
+  height: 60px;
+  background: url("packages/velocity_html-reporter/lib/velocity-logo.png") no-repeat center;
+  background-size: auto 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#velocityOverlay .velocity-logo .velocity-icon-status {
+  top: 16px;
+  left: 50%;
+  margin-left: -38px;
+  float: left;
+}
+
+#velocityOverlay .velocity-icon-status {
+  display: inline-block;
+  width: 32px;
+  height: 28px;
+  background: white;
+  border-radius: 33%;
+  position: relative;
+  font: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+#velocityOverlay .velocity-icon-status:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background: #4a90e2;
+  border-radius: 100%;
+  font-style: normal;
+  line-height: 1;
+}
+
+#velocityOverlay.failed .velocity-icon-status,
+#velocityOverlay .failed .velocity-icon-status {
+  background: #e2564e;
+}
+
+#velocityOverlay.failed .velocity-icon-status:before,
+#velocityOverlay .failed .velocity-icon-status:before {
+  content: '✖';
+  background: transparent;
+}
+
+#velocityOverlay.passed .velocity-icon-status,
+#velocityOverlay .passed .velocity-icon-status {
+  background: #21954f;
+}
+
+#velocityOverlay.passed .velocity-icon-status:before,
+#velocityOverlay .passed .velocity-icon-status:before {
+  content: '✔';
+  background: transparent;
+}
+
+#velocityOverlay.pending .velocity-icon-status:before,
+#velocityOverlay .pending .velocity-icon-status:before {
+  -webkit-animation: velocity-anim-throb 1.4s infinite ease-in-out both;
+  animation: velocity-anim-throb 1.4s infinite ease-in-out both;
+}
+
+#velocityOverlay .velocity-icon-total {
+  display: inline-block;
+  min-width: 80px;
+  background: white;
+  border: 4px solid #8abcef;
+  border-radius: 10px;
+  padding: 2px 0 8px;
+  font-style: normal;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  margin: 0 60px 0 50px;
+}
+
+#velocityOverlay .velocity-icon-total small {
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 6px;
+  display: block;
+  letter-spacing: 4px;
+}
+
+#velocityOverlay.failed .velocity-icon-total {
+  border-color: #e2564e;
+}
+
+#velocityOverlay.passed .velocity-icon-total {
+  border-color: #21954f;
+}
+
+#velocityOverlay .velocity-icon-time {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: transparent url("packages/velocity_html-reporter/lib/icon-time.png") no-repeat center;
+  background-size: 100%;
+  border: solid 5px #333333;
+  border-radius: 100%;
+  /* vertical-align: 30px; */
+  font-style: normal;
+  font-weight: 100;
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 51px;
+}
+
+#velocityOverlay .velocity-summary-text {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #222;
+  line-height: 2;
+  margin: 5px 0;
+}
+
+#velocityOverlay .velocity-icon-cog {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("packages/velocity_html-reporter/lib/velocity_cog.svg") no-repeat center;
+  background-size: auto 100%;
+}
+
+#velocityOverlay .velocity-options-toggle {
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  background: #efefef;
+  opacity: 0.4;
+  padding: 5px 5px 4px;
+  margin: 0;
+  line-height: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+#velocityOverlay .velocity-options-toggle:hover {
+  opacity: 0.9;
+}
+
+#velocityOverlay .velocity-options-toggle:focus {
+  outline: none;
+}
+
+#velocityOverlay .velocity-options {
+  overflow: hidden;
+  transition: margin 0.3s linear, opacity 0.3s ease-in-out, max-height 0.3s linear;
+  margin: 20px 0 10px;
+  opacity: 1;
+}
+
+#velocityOverlay .velocity-section-header {
+  border-bottom: solid 3px rgba(74, 144, 226, 0.5);
+  min-height: 30px;
+  margin: 10px 0 30px;
+  background: #ffffff;
+}
+
+#velocityOverlay .velocity-section-header .velocity-section-name {
+  background: inherit;
+  color: #AAA;
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  position: relative;
+  top: 16px;
+  padding: 0 2px 0 10px;
+}
+
+#velocityOverlay .velocity-section-header .velocity-section-name a {
+  text-decoration: none;
+}
+
+#velocityOverlay .velocity-suite {
+  border-bottom: solid 1px #efefef;
+  padding-bottom: 15px;
+}
+
+#velocityOverlay .velocity-suite:last-child {
+  border-bottom: 0 none;
+  padding-bottom: 0;
+}
+
+#velocityOverlay .velocity-report .velocity-icon-status {
+  border-radius: 38%;
+}
+
+#velocityOverlay .velocity-suite-header {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 20px 0 5px;
+  text-align: left;
+}
+
+#velocityOverlay .velocity-suite-header.passed {
+  color: #21954f;
+}
+
+#velocityOverlay .velocity-suite-header.failed {
+  color: #e2564e;
+}
+
+#velocityOverlay .velocity-report.passed .velocity-icon-status + .velocity-suite {
+  position: relative;
+}
+
+#velocityOverlay .velocity-report.passed .velocity-icon-status + .velocity-suite:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: 7px;
+  width: 34px;
+  height: 34px;
+  background: transparent url("packages/velocity_html-reporter/lib/icon-time.png") no-repeat center;
+  background-size: 100%;
+}
+
+#velocityOverlay .velocity-result-table {
+  width: 100%;
+  text-align: left;
+}
+
+#velocityOverlay .velocity-result-table .velocity-test-name,
+#velocityOverlay .velocity-result-table .velocity-test-time {
+  letter-spacing: 1px;
+  padding: 5px 0;
+}
+
+#velocityOverlay .velocity-result-table .velocity-test-time {
+  text-align: right;
+  font-family: Menlo, "Courier New", Courier, monospace;
+  white-space: nowrap;
+}
+
+#velocityOverlay .velocity-test.failed .velocity-test-time {
+  color: #e2564e;
+}
+
+#velocityOverlay .velocity-test.passed .velocity-test-time {
+  color: #21954f;
+}
+
+#velocityOverlay .velocity-fail-msg {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+#velocityOverlay .velocity-fail-msg .velocity-icon-status {
+  width: 20px;
+  height: 20px;
+  border-width: 0px;
+  font-size: 10px;
+  color: transparent;
+  margin: 0 8px 0 -36px;
+}
+
+#velocityOverlay .velocity-stack-trace {
+  font-family: Menlo, "Courier New", Courier, monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  max-width: 525px;
+  overflow-x: auto;
+  border-left: solid 3px #222222;
+  margin: 8px 0 12px -4px;
+}
+
+#velocityOverlay .velocity-notice-inline,
+#velocityOverlay .velocity-stack-trace {
+  border-radius: 3px;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+#velocityOverlay .btn-velocity {
+  background: #999999;
+  color: #ffffff;
+  border: 0 none;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  font-size: 12px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+#velocityOverlay .btn-velocity:hover {
+  opacity: 1;
+}
+
+#velocityOverlay .btn-velocity:focus {
+  outline: none;
+}
+
+#velocityOverlay .btn-velocity.active {
+  background: #21954f;
+}
+
+#velocityOverlay .velocity-iframe {
+  display: none;
+}
+
+#velocityOverlay .velocity-iframe iframe {
+  width: 100%;
+  margin-bottom: 50px;
+  min-height: 500px;
+  border: solid 3px rgba(74, 144, 226, 0.5);
+}
+
+#velocityOverlay .velocity-iframe.visible {
+  display: block;
+}
+
+#velocityOverlay .velocity-table-box {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 0 50px;
+}
+
+#velocityOverlay .velocity-table {
+  min-width: 100%;
+  background: #f0f0f0;
+  text-align: left;
+  border-collapse: collapse;
+  white-space: nowrap;
+  margin: 0;
+}
+
+#velocityOverlay .velocity-table td,
+#velocityOverlay .velocity-table th {
+  border-bottom: solid 1px white;
+  padding: 8px 10px;
+}
+
+#velocityOverlay .velocity-table th {
+  border-bottom: solid 2px #b4b4b4;
+}
+
+#velocityOverlay .velocity-icon-loading {
+  width: 32px;
+  height: 32px;
+}
+
+#velocityOverlay .velocity-icon-loading {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  background: #4990E2;
+  border-radius: 100%;
+  -webkit-animation: velocity-anim-throb 1.4s infinite ease-in-out both;
+  animation: velocity-anim-throb 1.4s infinite ease-in-out both;
+}
+
+#velocityResetNotification {
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 2em;
+}
+
+#velocityResetNotification:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#velocityResetNotification .velocity-notice-inline {
+  border: solid 3px rgba(74, 74, 74, 0.1);
+  background-color: #ffffff;
+  display: inline-block;
+  width: 95%;
+  max-width: 500px;
+}
+
+#velocity-status-widget {
+  transition: right 0.25s ease-in-out;
+}
+
+#velocity-status-widget {
+  z-index: 8000;
+  position: fixed;
+  text-align: left;
+}
+
+@keyframes velocity-anim-throb {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.6);
+  }
+}
+
+@-webkit-keyframes velocity-anim-throb {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.6);
+  }
+}
+
+#velocity-status-widget.right {
+  right: 5px;
+}
+
+#velocity-status-widget.left {
+  left: 5px;
+}
+
+#velocity-status-widget.top {
+  top: 5px;
+}
+
+#velocity-status-widget.bottom {
+  bottom: 5px;
+}
+
+#velocity-status-widget:before {
+  display: inline-block;
+  content: '';
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#velocity-status-widget .velocity-icon-status {
+  display: inline-block;
+  margin-left: -3px;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #8abcef;
+  background: white;
+  border-radius: 100%;
+  position: relative;
+}
+
+#velocity-status-widget .velocity-icon-status:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background: #333333;
+  border-radius: 100%;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 0.9;
+  color: white;
+}
+
+#velocity-status-widget.pending .velocity-icon-status:before {
+  animation: pulse 1.5s ease-in-out;
+  -webkit-animation: pulse 1.5s ease-in-out;
+  -moz-animation: pulse 1.5s ease-in-out;
+  -o-animation: pulse 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
+#velocity-status-widget.passed .velocity-icon-status,
+#velocity-status-widget.completed .velocity-icon-status {
+  border: 5px solid white;
+  background: #21954f;
+}
+
+#velocity-status-widget.passed .velocity-icon-status:before,
+#velocity-status-widget.completed .velocity-icon-status:before {
+  background: transparent;
+}
+
+#velocity-status-widget.failed .velocity-icon-status {
+  border: 5px solid white;
+  background: #e2564e;
+}
+
+#velocity-status-widget.failed .velocity-icon-status:before {
+  background: transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background: #8abcef;
+    transform: scale(0.7);
+  }
+
+  50% {
+    background: #8abcef;
+    transform: scale(1.5);
+  }
+
+  100% {
+    background: #8abcef;
+    transform: scale(0.7);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+#velocity-status-widget .pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
