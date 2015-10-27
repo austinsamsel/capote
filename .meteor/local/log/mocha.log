@@ -45,3 +45,6 @@
 [34mI20151010-14:21:50.131(-4)? [39mRunning mocha server tests
 => Client modified -- refreshing
 [34mI20151010-14:25:19.629(-4)? [39mRunning mocha server tests
+[34mI20151010-19:50:16.049(-4)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+[34mI20151010-19:50:16.065(-4)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+Parent process ( 42830 ) is dead! Exiting mocha
