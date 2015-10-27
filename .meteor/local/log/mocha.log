@@ -28,3 +28,4 @@
    token (45:8)
    
 => Your application has errors. Waiting for file change.
+Parent process ( 24652 ) is dead! Exiting mocha
