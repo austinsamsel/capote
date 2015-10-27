@@ -4,4 +4,29 @@ if (Meteor.isClient) {
       return Posts.find({}, {sort: {createdAt: -1}});
     }
   });
+
+  Template.createPost.events({
+    'submit form': function(e){
+      e.preventDefault();
+      var title = $('[name="title"]').val();
+      var content = $('[name="content"]').val();
+
+      Posts.insert({
+        title: title,
+        content: content,
+        createdAt: new Date()
+      });
+      $('[name=title]').val('');
+      $('[name=content]').val('');
+    }
+  });
+  
+  Template.post.events({
+    'click .deletePost': function(e){
+      e.preventDefault();
+      var thisPostId = this._id;
+      Posts.remove(thisPostId);
+    }
+  });
+
 }

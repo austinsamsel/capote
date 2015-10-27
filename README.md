@@ -1,3 +1,3 @@
-# Building Capote: Meteor & Mocha TDD (Part 2)
+# Building Capote: Meteor & Mocha TDD (Part 3)
 
-blog post: ---
+blog post: ...

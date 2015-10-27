@@ -4,6 +4,7 @@
 </head>
 
 <body>
+  {{> createPost}}
   <div class="container">
     {{#each posts}}
       {{> post}}
@@ -14,5 +15,16 @@
 <template name="post">
   <div class="timestamp">{{cleanDate createdAt}}</div>
   <div class="title">{{title}}</div>
-  <div class="content">{{content}}</div>
+  <div class="content">{{content}}</div> • <a href="#" class="deletePost">delete</a>
+</template>
+
+<template name="createPost">
+  <div class="create-post">
+    <form>
+      Create a post:
+      <input type="text" placeholder="add a title" name="title">
+      <textarea placeholder="write your words here" name="content"></textarea>
+      <input type="submit" value="Submit" />
+   </form>
+ </div>
 </template>
