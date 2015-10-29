@@ -30,3 +30,6 @@
 [34mI20151029-19:37:46.715(-4)? [39mMOCHA MIRROR LISTENING AT http://localhost:57790/
 [34mI20151029-19:37:47.032(-4)? [39m[velocity] Established connection with Velocity.
 [34mI20151029-19:37:49.059(-4)? [39mRunning mocha server tests
+[34mI20151029-19:38:14.397(-4)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+[34mI20151029-19:38:14.414(-4)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+Parent process ( 29105 ) is dead! Exiting mocha
