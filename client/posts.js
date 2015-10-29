@@ -20,7 +20,7 @@ if (Meteor.isClient) {
       $('[name=content]').val('');
     }
   });
-  
+
   Template.post.events({
     'click .deletePost': function(e){
       e.preventDefault();

@@ -3,24 +3,6 @@
 [[[[[ ~/Dropbox/DEV/apps-meteor-0_1/capote ]]]]]
 
 => Started proxy.
-[34mI20151026-23:24:37.641(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151026-23:24:37.643(-4)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151026-23:24:37.643(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151026-23:24:37.643(-4)? [39m** will still be sent to all clients.
-[34mI20151026-23:24:37.643(-4)? [39m**
-[34mI20151026-23:24:37.643(-4)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151026-23:24:37.643(-4)? [39m**
-[34mI20151026-23:24:37.643(-4)? [39m**   $ meteor remove autopublish
-[34mI20151026-23:24:37.643(-4)? [39m**
-[34mI20151026-23:24:37.644(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151026-23:24:37.644(-4)? [39m** for each collection that you want clients to see.
-[34mI20151026-23:24:37.644(-4)? [39m
-[34mI20151026-23:24:37.761(-4)? [39mMOCHA MIRROR LISTENING AT http://localhost:65106/
-=> Started your app.
-
-=> App running at: http://localhost:65106/
-[34mI20151026-23:24:38.014(-4)? [39m[velocity] Established connection with Velocity.
-[34mI20151026-23:24:41.851(-4)? [39mRunning mocha server tests
 => Errors prevented startup:
    
    While processing files with ecmascript (for target web.browser):
@@ -28,4 +10,34 @@
    token (45:8)
    
 => Your application has errors. Waiting for file change.
-Parent process ( 24652 ) is dead! Exiting mocha
+=> Modified -- restarting.
+=> Errors prevented startup:
+   
+   While processing files with ecmascript (for target web.browser):
+   tests/mocha/client/client.js:45:8: tests/mocha/client/client.js: Unexpected
+   token (45:8)
+   
+=> Your application has errors. Waiting for file change.
+=> Modified -- restarting.
+[34mI20151029-19:36:10.597(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151029-19:36:10.599(-4)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151029-19:36:10.599(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151029-19:36:10.599(-4)? [39m** will still be sent to all clients.
+[34mI20151029-19:36:10.600(-4)? [39m**
+[34mI20151029-19:36:10.600(-4)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151029-19:36:10.600(-4)? [39m**
+[34mI20151029-19:36:10.600(-4)? [39m**   $ meteor remove autopublish
+[34mI20151029-19:36:10.600(-4)? [39m**
+[34mI20151029-19:36:10.600(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151029-19:36:10.601(-4)? [39m** for each collection that you want clients to see.
+[34mI20151029-19:36:10.601(-4)? [39m
+[34mI20151029-19:36:10.602(-4)? [39mMOCHA MIRROR LISTENING AT http://localhost:56401/
+=> Meteor server restarted
+=> Started your app.
+
+=> App running at: http://localhost:56401/
+[34mI20151029-19:36:10.898(-4)? [39m[velocity] Established connection with Velocity.
+[34mI20151029-19:36:12.741(-4)? [39mRunning mocha server tests
+[34mI20151029-19:36:22.761(-4)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+[34mI20151029-19:36:22.777(-4)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+Parent process ( 26686 ) is dead! Exiting mocha

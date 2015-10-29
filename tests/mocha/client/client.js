@@ -36,12 +36,12 @@ if (!(typeof MochaWeb === 'undefined')){
     });
 
     describe("deleting posts", function(){
-    //  before(function(done){
+      before(function(done){
         Posts.insert({
           title: "delete me",
           content: "please delete me",
           createdAt: new Date()
-    //    });
+        });
         done();
       });
       it("deletes when I tell it to delete", function(){
