@@ -5,6 +5,7 @@
 
 <body>
   {{> createPost}}
+  {{> wordcount}}
   <div class="container">
     {{#each posts}}
       {{> post}}
@@ -16,6 +17,7 @@
   <div class="timestamp">{{cleanDate createdAt}}</div>
   <div class="title">{{title}}</div>
   <div class="content">{{content}}</div> • <a href="#" class="deletePost">delete</a>
+  <div class="wordcount">{{wordCount}}</div>
 </template>
 
 <template name="createPost">
@@ -27,4 +29,10 @@
       <input type="submit" value="Submit" />
    </form>
  </div>
+</template>
+
+<template name="wordcount">
+  <div class="wordcount-msg">
+    word count: <span class="wordcount-num">{{wordcount}}</span>
+  </div>
 </template>
