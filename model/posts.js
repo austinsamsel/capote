@@ -1,6 +1,10 @@
 Posts = new Mongo.Collection('posts');
 
 if (Meteor.isClient) {
+
+  // added this, but not incl in tutorial.
+  Meteor.subscribe('posts');
+
   Template.body.helpers({
     posts: function () {
       return Posts.find({}, {sort: {createdAt: -1}});
@@ -20,6 +24,7 @@ if (Meteor.isClient) {
       });
       $('[name=title]').val('');
       $('[name=content]').val('');
+      Session.set('wordcount', 0);
     },
     'keyup [name=content]': function(e){
       var wordsToCount = $('[name="content"]').val();
@@ -45,13 +50,18 @@ if (Meteor.isClient) {
   Template.wordcount.onRendered(function(){
     Session.set('wordcount', 0);
   });
+
   Template.wordcount.helpers({
     wordcount: function(){
       return Session.get('wordcount');
     }
   });
 
-
-
-
+  Template.createPost.helpers({
+    enoughWords: function(){
+      var wordcount = Session.get('wordcount');
+      var theGoal = Goals.findOne().dailyGoal;
+      return wordcount >= theGoal
+    }
+  });
 }

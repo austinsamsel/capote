@@ -343,17 +343,6 @@
       "hash": "9c79b20dd3f3a6da85828defdd8585b8436af75d"
     },
     {
-      "path": "packages/autopublish.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/autopublish.js?c5edcae57ad2cf69f735706476fb86d91c1f1b0e",
-      "sourceMap": "packages/autopublish.js.map",
-      "sourceMapUrl": "/packages/c5edcae57ad2cf69f735706476fb86d91c1f1b0e.map",
-      "size": 768,
-      "hash": "c5edcae57ad2cf69f735706476fb86d91c1f1b0e"
-    },
-    {
       "path": "packages/webapp.js",
       "where": "client",
       "type": "js",
@@ -719,11 +708,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/client/template.index.js?caa1f035e501f6a790d0937293668c9a1784d901",
+      "url": "/app/client/template.index.js?9350f883dde9cc135afaadbbbaaf851bf5a52f76",
       "sourceMap": "app/client/template.index.js.map",
-      "sourceMapUrl": "/app/client/caa1f035e501f6a790d0937293668c9a1784d901.map",
-      "size": 2195,
-      "hash": "caa1f035e501f6a790d0937293668c9a1784d901"
+      "sourceMapUrl": "/app/client/9350f883dde9cc135afaadbbbaaf851bf5a52f76.map",
+      "size": 2890,
+      "hash": "9350f883dde9cc135afaadbbbaaf851bf5a52f76"
     },
     {
       "path": "app/client/helper.js",
@@ -737,15 +726,26 @@
       "hash": "3e85693262e31780edc4df5d98ac8a8e1d1c12c4"
     },
     {
+      "path": "app/model/goals.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/model/goals.js?3b14181f097aadd605f7af56ecbf4cf41ffd48cb",
+      "sourceMap": "app/model/goals.js.map",
+      "sourceMapUrl": "/app/model/3b14181f097aadd605f7af56ecbf4cf41ffd48cb.map",
+      "size": 2817,
+      "hash": "3b14181f097aadd605f7af56ecbf4cf41ffd48cb"
+    },
+    {
       "path": "app/model/posts.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/model/posts.js?ea5c2d22f15207e91f28fa18014b6386ae6e0c64",
+      "url": "/app/model/posts.js?5ab2d965e9a90b7230499d777403cba04c42af95",
       "sourceMap": "app/model/posts.js.map",
-      "sourceMapUrl": "/app/model/ea5c2d22f15207e91f28fa18014b6386ae6e0c64.map",
-      "size": 4484,
-      "hash": "ea5c2d22f15207e91f28fa18014b6386ae6e0c64"
+      "sourceMapUrl": "/app/model/5ab2d965e9a90b7230499d777403cba04c42af95.map",
+      "size": 5541,
+      "hash": "5ab2d965e9a90b7230499d777403cba04c42af95"
     },
     {
       "path": "merged-stylesheets.css",

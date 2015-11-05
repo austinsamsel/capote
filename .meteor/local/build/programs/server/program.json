@@ -166,10 +166,6 @@
       "path": "packages/webapp.js"
     },
     {
-      "sourceMap": "packages/autopublish.js.map",
-      "path": "packages/autopublish.js"
-    },
-    {
       "sourceMap": "packages/callback-hook.js.map",
       "path": "packages/callback-hook.js"
     },
@@ -337,6 +333,10 @@
     },
     {
       "path": "packages/global-imports.js"
+    },
+    {
+      "sourceMap": "app/model/goals.js.map",
+      "path": "app/model/goals.js"
     },
     {
       "sourceMap": "app/model/posts.js.map",

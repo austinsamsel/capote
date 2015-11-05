@@ -9,52 +9,66 @@
 Posts = new Mongo.Collection('posts');                                 // 1
                                                                        //
 if (Meteor.isClient) {                                                 // 3
-  Template.body.helpers({                                              // 4
-    posts: function () {                                               // 5
-      return Posts.find({}, { sort: { createdAt: -1 } });              // 6
+                                                                       //
+  // added this, but not incl in tutorial.                             //
+  Meteor.subscribe('posts');                                           // 6
+                                                                       //
+  Template.body.helpers({                                              // 8
+    posts: function () {                                               // 9
+      return Posts.find({}, { sort: { createdAt: -1 } });              // 10
     }                                                                  //
   });                                                                  //
                                                                        //
-  Template.createPost.events({                                         // 10
-    'submit form': function (e) {                                      // 11
-      e.preventDefault();                                              // 12
-      var title = $('[name="title"]').val();                           // 13
-      var content = $('[name="content"]').val();                       // 14
+  Template.createPost.events({                                         // 14
+    'submit form': function (e) {                                      // 15
+      e.preventDefault();                                              // 16
+      var title = $('[name="title"]').val();                           // 17
+      var content = $('[name="content"]').val();                       // 18
                                                                        //
-      Posts.insert({                                                   // 16
-        title: title,                                                  // 17
-        content: content,                                              // 18
-        createdAt: new Date()                                          // 19
+      Posts.insert({                                                   // 20
+        title: title,                                                  // 21
+        content: content,                                              // 22
+        createdAt: new Date()                                          // 23
       });                                                              //
-      $('[name=title]').val('');                                       // 21
-      $('[name=content]').val('');                                     // 22
+      $('[name=title]').val('');                                       // 25
+      $('[name=content]').val('');                                     // 26
+      Session.set('wordcount', 0);                                     // 27
     },                                                                 //
-    'keyup [name=content]': function (e) {                             // 24
-      var wordsToCount = $('[name="content"]').val();                  // 25
+    'keyup [name=content]': function (e) {                             // 29
+      var wordsToCount = $('[name="content"]').val();                  // 30
       Meteor.call('getWordcount', wordsToCount, function (err, results) {
-        if (err) {                                                     // 27
-          console.error(err);                                          // 28
+        if (err) {                                                     // 32
+          console.error(err);                                          // 33
         } else {                                                       //
-          Session.set('wordcount', results);                           // 31
+          Session.set('wordcount', results);                           // 36
         }                                                              //
       });                                                              //
     }                                                                  //
   });                                                                  //
                                                                        //
-  Template.post.events({                                               // 37
-    'click .deletePost': function (e) {                                // 38
-      e.preventDefault();                                              // 39
-      var thisPostId = this._id;                                       // 40
-      Posts.remove(thisPostId);                                        // 41
+  Template.post.events({                                               // 42
+    'click .deletePost': function (e) {                                // 43
+      e.preventDefault();                                              // 44
+      var thisPostId = this._id;                                       // 45
+      Posts.remove(thisPostId);                                        // 46
     }                                                                  //
   });                                                                  //
                                                                        //
-  Template.wordcount.onRendered(function () {                          // 45
-    Session.set('wordcount', 0);                                       // 46
+  Template.wordcount.onRendered(function () {                          // 50
+    Session.set('wordcount', 0);                                       // 51
   });                                                                  //
-  Template.wordcount.helpers({                                         // 48
-    wordcount: function () {                                           // 49
-      return Session.get('wordcount');                                 // 50
+                                                                       //
+  Template.wordcount.helpers({                                         // 54
+    wordcount: function () {                                           // 55
+      return Session.get('wordcount');                                 // 56
+    }                                                                  //
+  });                                                                  //
+                                                                       //
+  Template.createPost.helpers({                                        // 60
+    enoughWords: function () {                                         // 61
+      var wordcount = Session.get('wordcount');                        // 62
+      var theGoal = Goals.findOne().dailyGoal;                         // 63
+      return wordcount >= theGoal;                                     // 64
     }                                                                  //
   });                                                                  //
 }                                                                      //

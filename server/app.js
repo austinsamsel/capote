@@ -1,5 +1,13 @@
 if (Meteor.isServer) {
 
+  Meteor.publish("posts", function(){
+    return Posts.find();
+  });
+
+  Meteor.publish("goals", function(){
+    return Goals.find();
+  });
+
   Meteor.methods({
     'getWordcount': function getWordcount(words) {
       check(words, String);
@@ -18,6 +26,12 @@ if (Meteor.isServer) {
   // });
 
   Meteor.startup(function () {
+    if (Goals.find().count() === 0) {
+      Goals.insert({
+        dailyGoal: 1,
+        createdAt: new Date(),
+      });
+    };
     if (Posts.find().count() === 0) {
       Posts.insert({
         title: "Neutra messenger bag",
