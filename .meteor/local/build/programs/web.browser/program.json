@@ -618,6 +618,17 @@
       "hash": "4e38cbc4dc376eb002e586682f309a2b2d58561c"
     },
     {
+      "path": "packages/meteorhacks_npm.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/meteorhacks_npm.js?cdc14645556b0d45b960a3692202525a654229fa",
+      "sourceMap": "packages/meteorhacks_npm.js.map",
+      "sourceMapUrl": "/packages/cdc14645556b0d45b960a3692202525a654229fa.map",
+      "size": 1383,
+      "hash": "cdc14645556b0d45b960a3692202525a654229fa"
+    },
+    {
       "path": "packages/livedata.js",
       "where": "client",
       "type": "js",
@@ -662,6 +673,17 @@
       "hash": "6aa94fb4743be2472f799f928674607edae2afdf"
     },
     {
+      "path": "packages/meteorhacks_async.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/meteorhacks_async.js?06dde971659e7fac7438d264ae3b9a5493a58041",
+      "sourceMap": "packages/meteorhacks_async.js.map",
+      "sourceMapUrl": "/packages/06dde971659e7fac7438d264ae3b9a5493a58041.map",
+      "size": 1443,
+      "hash": "06dde971659e7fac7438d264ae3b9a5493a58041"
+    },
+    {
       "path": "packages/autoupdate.js",
       "where": "client",
       "type": "js",
@@ -677,20 +699,20 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/packages/global-imports.js?92bab6744c8f15255ef7f454f72785e6f777a829",
-      "size": 1000,
-      "hash": "92bab6744c8f15255ef7f454f72785e6f777a829"
+      "url": "/packages/global-imports.js?877ff0a0a8054a70f5e06edb461cdf0c2697b020",
+      "size": 1102,
+      "hash": "877ff0a0a8054a70f5e06edb461cdf0c2697b020"
     },
     {
       "path": "app/client/template.index.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/client/template.index.js?53fee192328fbdd78f7611ee0508c7a441f5abc3",
+      "url": "/app/client/template.index.js?caa1f035e501f6a790d0937293668c9a1784d901",
       "sourceMap": "app/client/template.index.js.map",
-      "sourceMapUrl": "/app/client/53fee192328fbdd78f7611ee0508c7a441f5abc3.map",
-      "size": 1609,
-      "hash": "53fee192328fbdd78f7611ee0508c7a441f5abc3"
+      "sourceMapUrl": "/app/client/caa1f035e501f6a790d0937293668c9a1784d901.map",
+      "size": 2195,
+      "hash": "caa1f035e501f6a790d0937293668c9a1784d901"
     },
     {
       "path": "app/client/helper.js",
@@ -704,26 +726,15 @@
       "hash": "3e85693262e31780edc4df5d98ac8a8e1d1c12c4"
     },
     {
-      "path": "app/client/posts.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/app/client/posts.js?e4a8b96ae8dc11c734a0ab6433910b7820ad5c15",
-      "sourceMap": "app/client/posts.js.map",
-      "sourceMapUrl": "/app/client/e4a8b96ae8dc11c734a0ab6433910b7820ad5c15.map",
-      "size": 2896,
-      "hash": "e4a8b96ae8dc11c734a0ab6433910b7820ad5c15"
-    },
-    {
       "path": "app/model/posts.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/model/posts.js?00c11e323bb40e9cda4009232fefcabf76fc0098",
+      "url": "/app/model/posts.js?37c6526d27ac02e3e0dd27d192453fcda04044cd",
       "sourceMap": "app/model/posts.js.map",
-      "sourceMapUrl": "/app/model/00c11e323bb40e9cda4009232fefcabf76fc0098.map",
-      "size": 624,
-      "hash": "00c11e323bb40e9cda4009232fefcabf76fc0098"
+      "sourceMapUrl": "/app/model/37c6526d27ac02e3e0dd27d192453fcda04044cd.map",
+      "size": 3729,
+      "hash": "37c6526d27ac02e3e0dd27d192453fcda04044cd"
     },
     {
       "path": "merged-stylesheets.css",

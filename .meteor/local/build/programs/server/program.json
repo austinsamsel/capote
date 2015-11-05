@@ -296,6 +296,10 @@
       "path": "packages/momentjs_moment.js"
     },
     {
+      "sourceMap": "packages/meteorhacks_npm.js.map",
+      "path": "packages/meteorhacks_npm.js"
+    },
+    {
       "sourceMap": "packages/livedata.js.map",
       "path": "packages/livedata.js"
     },
@@ -310,6 +314,10 @@
     {
       "sourceMap": "packages/templating.js.map",
       "path": "packages/templating.js"
+    },
+    {
+      "sourceMap": "packages/meteorhacks_async.js.map",
+      "path": "packages/meteorhacks_async.js"
     },
     {
       "sourceMap": "packages/autoupdate.js.map",

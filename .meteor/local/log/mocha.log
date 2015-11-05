@@ -3,24 +3,155 @@
 [[[[[ ~/Dropbox/DEV/apps-meteor-0_1/capote ]]]]]
 
 => Started proxy.
-[34mI20151104-21:13:28.800(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151104-21:13:28.802(-5)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151104-21:13:28.802(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151104-21:13:28.802(-5)? [39m** will still be sent to all clients.
-[34mI20151104-21:13:28.803(-5)? [39m**
-[34mI20151104-21:13:28.803(-5)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151104-21:13:28.805(-5)? [39m**
-[34mI20151104-21:13:28.807(-5)? [39m**   $ meteor remove autopublish
-[34mI20151104-21:13:28.807(-5)? [39m**
-[34mI20151104-21:13:28.810(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151104-21:13:28.810(-5)? [39m** for each collection that you want clients to see.
-[34mI20151104-21:13:28.810(-5)? [39m
-[34mI20151104-21:13:28.811(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:63405/
+[34mI20151104-21:43:59.348(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151104-21:43:59.350(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151104-21:43:59.350(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151104-21:43:59.351(-5)? [39m** will still be sent to all clients.
+[34mI20151104-21:43:59.351(-5)? [39m**
+[34mI20151104-21:43:59.351(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151104-21:43:59.351(-5)? [39m**
+[34mI20151104-21:43:59.351(-5)? [39m**   $ meteor remove autopublish
+[34mI20151104-21:43:59.351(-5)? [39m**
+[34mI20151104-21:43:59.351(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151104-21:43:59.351(-5)? [39m** for each collection that you want clients to see.
+[34mI20151104-21:43:59.351(-5)? [39m
+[34mI20151104-21:43:59.352(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:50447/
 => Started your app.
 
-=> App running at: http://localhost:63405/
-[34mI20151104-21:13:29.064(-5)? [39m[velocity] Established connection with Velocity.
-[34mI20151104-21:13:31.826(-5)? [39mRunning mocha server tests
-[34mI20151104-21:15:56.459(-5)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
-[34mI20151104-21:15:56.477(-5)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
-Parent process ( 89770 ) is dead! Exiting mocha
+=> App running at: http://localhost:50447/
+[34mW20151104-21:43:59.352(-5)? (STDERR) [39m[35m[TypeError: Object [object Object] has no method 'npmRequire'][39m
+[34mI20151104-21:43:59.706(-5)? [39m[velocity] Established connection with Velocity.
+[34mI20151104-21:44:02.114(-5)? [39mRunning mocha server tests
+=> Server modified -- restarting...                                   [34mI20151104-21:44:30.258(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151104-21:44:30.259(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151104-21:44:30.259(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151104-21:44:30.259(-5)? [39m** will still be sent to all clients.
+[34mI20151104-21:44:30.259(-5)? [39m**
+[34mI20151104-21:44:30.259(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151104-21:44:30.259(-5)? [39m**
+[34mI20151104-21:44:30.259(-5)? [39m**   $ meteor remove autopublish
+[34mI20151104-21:44:30.260(-5)? [39m**
+[34mI20151104-21:44:30.260(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151104-21:44:30.260(-5)? [39m** for each collection that you want clients to see.
+[34mI20151104-21:44:30.260(-5)? [39m
+[34mI20151104-21:44:30.505(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:50447/
+=> Meteor server restarted
+[34mI20151104-21:44:34.543(-5)? [39m[velocity] Established connection with Velocity.
+[34mI20151104-21:44:36.580(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151104-21:44:46.163(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151104-21:44:54.641(-5)? [39mRunning mocha server tests
+[34mI20151104-21:45:02.260(-5)? [39mRunning mocha server tests
+[34mI20151104-21:45:08.422(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151104-21:45:10.891(-5)? [39mRunning mocha server tests
+=> Server modified -- restarting...                                   [34mI20151104-21:45:17.431(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151104-21:45:17.431(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151104-21:45:17.431(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151104-21:45:17.431(-5)? [39m** will still be sent to all clients.
+[34mI20151104-21:45:17.432(-5)? [39m**
+[34mI20151104-21:45:17.432(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151104-21:45:17.432(-5)? [39m**
+[34mI20151104-21:45:17.432(-5)? [39m**   $ meteor remove autopublish
+[34mI20151104-21:45:17.432(-5)? [39m**
+[34mI20151104-21:45:17.432(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151104-21:45:17.432(-5)? [39m** for each collection that you want clients to see.
+[34mI20151104-21:45:17.433(-5)? [39m
+[34mW20151104-21:45:17.747(-5)? (STDERR) [39m[35m[39m
+[34mW20151104-21:45:17.748(-5)? (STDERR) [39m[35m/Users/lilsiri1/.meteor/packages/velocity_meteor-tool/.1.1.9_1.pdvq2h++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:245[39m
+[34mW20151104-21:45:17.749(-5)? (STDERR) [39m[35m						throw(ex);[39m
+[34mW20151104-21:45:17.750(-5)? (STDERR) [39m[35m						      ^[39m
+[34mW20151104-21:45:17.842(-5)? (STDERR) [39m[35mReferenceError: Template is not defined[39m
+[34mW20151104-21:45:17.842(-5)? (STDERR) [39m[35m    at meteor://💻app/model/posts.js:3:1[39m
+[34mW20151104-21:45:17.843(-5)? (STDERR) [39m[35m    at /private/var/folders/c_/xtd9srdx5mg1jg2czsqlh_3r0000gp/T/meteor-test-runywtbze/.meteor/local/build/programs/server/app/model/posts.js:21:4[39m
+[34mW20151104-21:45:17.844(-5)? (STDERR) [39m[35m    at /private/var/folders/c_/xtd9srdx5mg1jg2czsqlh_3r0000gp/T/meteor-test-runywtbze/.meteor/local/build/programs/server/boot.js:242:10[39m
+[34mW20151104-21:45:17.845(-5)? (STDERR) [39m[35m    at Array.forEach (native)[39m
+[34mW20151104-21:45:17.845(-5)? (STDERR) [39m[35m    at Function._.each._.forEach (/Users/lilsiri1/.meteor/packages/velocity_meteor-tool/.1.1.9_1.pdvq2h++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/server-lib/node_modules/underscore/underscore.js:79:11)[39m
+[34mW20151104-21:45:17.845(-5)? (STDERR) [39m[35m    at /private/var/folders/c_/xtd9srdx5mg1jg2czsqlh_3r0000gp/T/meteor-test-runywtbze/.meteor/local/build/programs/server/boot.js:137:5[39m
+=> Exited with code: 8
+[34mI20151104-21:45:23.065(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151104-21:45:23.065(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151104-21:45:23.065(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151104-21:45:23.065(-5)? [39m** will still be sent to all clients.
+[34mI20151104-21:45:23.066(-5)? [39m**
+[34mI20151104-21:45:23.066(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151104-21:45:23.066(-5)? [39m**
+[34mI20151104-21:45:23.067(-5)? [39m**   $ meteor remove autopublish
+[34mI20151104-21:45:23.067(-5)? [39m**
+[34mI20151104-21:45:23.067(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151104-21:45:23.067(-5)? [39m** for each collection that you want clients to see.
+[34mI20151104-21:45:23.067(-5)? [39m
+[34mW20151104-21:45:23.465(-5)? (STDERR) [39m[35m[39m
+[34mW20151104-21:45:23.466(-5)? (STDERR) [39m[35m/Users/lilsiri1/.meteor/packages/velocity_meteor-tool/.1.1.9_1.pdvq2h++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:245[39m
+[34mW20151104-21:45:23.467(-5)? (STDERR) [39m[35m						throw(ex);[39m
+[34mW20151104-21:45:23.467(-5)? (STDERR) [39m[35m						      ^[39m
+[34mW20151104-21:45:23.566(-5)? (STDERR) [39m[35mReferenceError: Template is not defined[39m
+[34mW20151104-21:45:23.566(-5)? (STDERR) [39m[35m    at meteor://💻app/model/posts.js:3:1[39m
+[34mW20151104-21:45:23.566(-5)? (STDERR) [39m[35m    at /private/var/folders/c_/xtd9srdx5mg1jg2czsqlh_3r0000gp/T/meteor-test-runywtbze/.meteor/local/build/programs/server/app/model/posts.js:21:4[39m
+[34mW20151104-21:45:23.566(-5)? (STDERR) [39m[35m    at /private/var/folders/c_/xtd9srdx5mg1jg2czsqlh_3r0000gp/T/meteor-test-runywtbze/.meteor/local/build/programs/server/boot.js:242:10[39m
+[34mW20151104-21:45:23.567(-5)? (STDERR) [39m[35m    at Array.forEach (native)[39m
+[34mW20151104-21:45:23.567(-5)? (STDERR) [39m[35m    at Function._.each._.forEach (/Users/lilsiri1/.meteor/packages/velocity_meteor-tool/.1.1.9_1.pdvq2h++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/server-lib/node_modules/underscore/underscore.js:79:11)[39m
+[34mW20151104-21:45:23.567(-5)? (STDERR) [39m[35m    at /private/var/folders/c_/xtd9srdx5mg1jg2czsqlh_3r0000gp/T/meteor-test-runywtbze/.meteor/local/build/programs/server/boot.js:137:5[39m
+=> Exited with code: 8
+[34mI20151104-21:45:30.486(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151104-21:45:30.486(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151104-21:45:30.487(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151104-21:45:30.487(-5)? [39m** will still be sent to all clients.
+[34mI20151104-21:45:30.487(-5)? [39m**
+[34mI20151104-21:45:30.487(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151104-21:45:30.487(-5)? [39m**
+[34mI20151104-21:45:30.487(-5)? [39m**   $ meteor remove autopublish
+[34mI20151104-21:45:30.487(-5)? [39m**
+[34mI20151104-21:45:30.488(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151104-21:45:30.488(-5)? [39m** for each collection that you want clients to see.
+[34mI20151104-21:45:30.488(-5)? [39m
+[34mW20151104-21:45:30.778(-5)? (STDERR) [39m[35m[39m
+[34mW20151104-21:45:30.778(-5)? (STDERR) [39m[35m/Users/lilsiri1/.meteor/packages/velocity_meteor-tool/.1.1.9_1.pdvq2h++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:245[39m
+[34mW20151104-21:45:30.779(-5)? (STDERR) [39m[35m						throw(ex);[39m
+[34mW20151104-21:45:30.779(-5)? (STDERR) [39m[35m						      ^[39m
+[34mW20151104-21:45:30.849(-5)? (STDERR) [39m[35mReferenceError: Template is not defined[39m
+[34mW20151104-21:45:30.849(-5)? (STDERR) [39m[35m    at meteor://💻app/model/posts.js:3:1[39m
+[34mW20151104-21:45:30.849(-5)? (STDERR) [39m[35m    at /private/var/folders/c_/xtd9srdx5mg1jg2czsqlh_3r0000gp/T/meteor-test-runywtbze/.meteor/local/build/programs/server/app/model/posts.js:21:4[39m
+[34mW20151104-21:45:30.849(-5)? (STDERR) [39m[35m    at /private/var/folders/c_/xtd9srdx5mg1jg2czsqlh_3r0000gp/T/meteor-test-runywtbze/.meteor/local/build/programs/server/boot.js:242:10[39m
+[34mW20151104-21:45:30.849(-5)? (STDERR) [39m[35m    at Array.forEach (native)[39m
+[34mW20151104-21:45:30.849(-5)? (STDERR) [39m[35m    at Function._.each._.forEach (/Users/lilsiri1/.meteor/packages/velocity_meteor-tool/.1.1.9_1.pdvq2h++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/server-lib/node_modules/underscore/underscore.js:79:11)[39m
+[34mW20151104-21:45:30.850(-5)? (STDERR) [39m[35m    at /private/var/folders/c_/xtd9srdx5mg1jg2czsqlh_3r0000gp/T/meteor-test-runywtbze/.meteor/local/build/programs/server/boot.js:137:5[39m
+=> Exited with code: 8
+=> Your application is crashing. Waiting for file change.
+=> Modified -- restarting.
+[34mI20151104-21:45:50.751(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151104-21:45:50.752(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151104-21:45:50.752(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151104-21:45:50.752(-5)? [39m** will still be sent to all clients.
+[34mI20151104-21:45:50.752(-5)? [39m**
+[34mI20151104-21:45:50.752(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151104-21:45:50.753(-5)? [39m**
+[34mI20151104-21:45:50.753(-5)? [39m**   $ meteor remove autopublish
+[34mI20151104-21:45:50.753(-5)? [39m**
+[34mI20151104-21:45:50.753(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151104-21:45:50.753(-5)? [39m** for each collection that you want clients to see.
+[34mI20151104-21:45:50.754(-5)? [39m
+[34mI20151104-21:45:51.036(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:50447/
+=> Meteor server restarted
+[34mI20151104-21:45:53.464(-5)? [39m[velocity] Established connection with Velocity.
+[34mI20151104-21:45:58.019(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151104-21:47:59.721(-5)? [39mRunning mocha server tests
+=> Server modified -- restarting...                                   [34mI20151104-21:48:51.275(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151104-21:48:51.275(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151104-21:48:51.275(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151104-21:48:51.276(-5)? [39m** will still be sent to all clients.
+[34mI20151104-21:48:51.276(-5)? [39m**
+[34mI20151104-21:48:51.276(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151104-21:48:51.276(-5)? [39m**
+[34mI20151104-21:48:51.276(-5)? [39m**   $ meteor remove autopublish
+[34mI20151104-21:48:51.277(-5)? [39m**
+[34mI20151104-21:48:51.277(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151104-21:48:51.277(-5)? [39m** for each collection that you want clients to see.
+[34mI20151104-21:48:51.279(-5)? [39m
+[34mW20151104-21:48:51.528(-5)? (STDERR) [39m[35m[TypeError: Object [object Object] has no method 'npmRequire'][39m
+[34mI20151104-21:48:51.529(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:50447/
+=> Meteor server restarted
+[34mI20151104-21:48:53.531(-5)? [39m[velocity] Established connection with Velocity.
+[34mI20151104-21:48:55.268(-5)? [39mRunning mocha server tests

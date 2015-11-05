@@ -8,6 +8,8 @@ Date = Package['es5-shim'].Date;
 parseInt = Package['es5-shim'].parseInt;
 ECMAScript = Package.ecmascript.ECMAScript;
 moment = Package['momentjs:moment'].moment;
+check = Package.check.check;
+Match = Package.check.Match;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 main = Package.webapp.main;
@@ -24,6 +26,7 @@ babelHelpers = Package['babel-runtime'].babelHelpers;
 Promise = Package.promise.Promise;
 Map = Package['ecmascript-collections'].Map;
 Set = Package['ecmascript-collections'].Set;
+Async = Package['meteorhacks:async'].Async;
 Autoupdate = Package.autoupdate.Autoupdate;
 HTML = Package.htmljs.HTML;
 
