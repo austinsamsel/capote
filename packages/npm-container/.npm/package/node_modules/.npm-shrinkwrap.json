@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "wordcount": {
+      "version": "1.1.1",
+      "dependencies": {
+        "match-words": {
+          "version": "0.1.0",
+          "dependencies": {
+            "word-regex": {
+              "version": "0.1.0"
+            }
+          }
+        }
+      }
+    }
+  }
+}

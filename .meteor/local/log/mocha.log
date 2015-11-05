@@ -1,35 +1,8 @@
 => Using velocity:METEOR@1.2.0.2_1 as requested (overriding Meteor 1.2.0.2)
 
-[[[[[ ~/Dropbox/DEV/apps-meteor-0_1/capote ]]]]]
+Can't listen on port 60033. Perhaps another Meteor is running?
 
-=> Started proxy.
-=> Errors prevented startup:
-   
-   While processing files with ecmascript (for target web.browser):
-   tests/mocha/client/client.js:45:8: tests/mocha/client/client.js: Unexpected
-   token (45:8)
-   
-=> Your application has errors. Waiting for file change.
-=> Modified -- restarting.
-[34mI20151029-19:37:46.710(-4)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151029-19:37:46.712(-4)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151029-19:37:46.712(-4)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151029-19:37:46.712(-4)? [39m** will still be sent to all clients.
-[34mI20151029-19:37:46.712(-4)? [39m**
-[34mI20151029-19:37:46.713(-4)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151029-19:37:46.713(-4)? [39m**
-[34mI20151029-19:37:46.713(-4)? [39m**   $ meteor remove autopublish
-[34mI20151029-19:37:46.713(-4)? [39m**
-[34mI20151029-19:37:46.713(-4)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151029-19:37:46.713(-4)? [39m** for each collection that you want clients to see.
-[34mI20151029-19:37:46.714(-4)? [39m
-=> Meteor server restarted
-=> Started your app.
-
-=> App running at: http://localhost:57790/
-[34mI20151029-19:37:46.715(-4)? [39mMOCHA MIRROR LISTENING AT http://localhost:57790/
-[34mI20151029-19:37:47.032(-4)? [39m[velocity] Established connection with Velocity.
-[34mI20151029-19:37:49.059(-4)? [39mRunning mocha server tests
-[34mI20151029-19:38:14.397(-4)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
-[34mI20151029-19:38:14.414(-4)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
-Parent process ( 29105 ) is dead! Exiting mocha
+Running two copies of Meteor in the same application directory
+will not work. If something else is using port 60033, you can
+specify an alternative port with --port <port>.
+Parent process ( 84924 ) is dead! Exiting mocha
