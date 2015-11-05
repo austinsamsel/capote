@@ -8,14 +8,14 @@ if (Meteor.isServer) {
     }
   });
 
-  Meteor.call('getWordcount', 'hows it going world?', function(err, results){
-    if(err){
-      console.error(err);
-    }
-    else{
-      console.log('HEY! it worked, it was ' + results + ' words!');
-   }
-  });
+  // Meteor.call('getWordcount', 'hows it going world?', function(err, results){
+  //   if(err){
+  //     console.error(err);
+  //   }
+  //   else{
+  //     console.log('HEY! it worked, it was ' + results + ' words!');
+  //  }
+  // });
 
 
   Meteor.startup(function () {

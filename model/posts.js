@@ -20,6 +20,18 @@ if (Meteor.isClient) {
       });
       $('[name=title]').val('');
       $('[name=content]').val('');
+      Session.set('wordcount', 0); 
+    },
+    'keyup [name=content]': function(e){
+      var wordsToCount = $('[name="content"]').val();
+      Meteor.call('getWordcount', wordsToCount, function(err, results){
+        if(err){
+          console.error(err);
+        }
+        else{
+          Session.set('wordcount', results);
+        }
+      });
     }
   });
 
@@ -34,6 +46,7 @@ if (Meteor.isClient) {
   Template.wordcount.onRendered(function(){
     Session.set('wordcount', 0);
   });
+
   Template.wordcount.helpers({
     wordcount: function(){
       return Session.get('wordcount');

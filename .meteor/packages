@@ -22,3 +22,6 @@ mike:mocha
 momentjs:moment
 check
 meteorhacks:npm
+
+
+npm-container

@@ -300,6 +300,14 @@
       "path": "packages/meteorhacks_npm.js"
     },
     {
+      "node_modules": "npm/npm-container/node_modules",
+      "sourceMap": "packages/npm-container.js.map",
+      "path": "packages/npm-container.js",
+      "assets": {
+        "../../packages.json": "assets/packages.json"
+      }
+    },
+    {
       "sourceMap": "packages/livedata.js.map",
       "path": "packages/livedata.js"
     },

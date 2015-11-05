@@ -58,7 +58,6 @@ if (!(typeof MochaWeb === 'undefined')){
       before(function(done){
         $('[name="content"]').val('a new');
         $('[name="content"]').keyup();
-        Session.set('wordcount', 0); // clears the session.
         done();
       });
       it("displays the wordcount when the user types in the form", function(){

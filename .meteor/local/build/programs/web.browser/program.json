@@ -629,6 +629,17 @@
       "hash": "cdc14645556b0d45b960a3692202525a654229fa"
     },
     {
+      "path": "packages/npm-container.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/npm-container.js?b0479151254947cc36016093d010e5bd6cef8421",
+      "sourceMap": "packages/npm-container.js.map",
+      "sourceMapUrl": "/packages/b0479151254947cc36016093d010e5bd6cef8421.map",
+      "size": 773,
+      "hash": "b0479151254947cc36016093d010e5bd6cef8421"
+    },
+    {
       "path": "packages/livedata.js",
       "where": "client",
       "type": "js",
@@ -730,11 +741,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/model/posts.js?37c6526d27ac02e3e0dd27d192453fcda04044cd",
+      "url": "/app/model/posts.js?eebb860498d6c0b390c61a44b7321b48899408c9",
       "sourceMap": "app/model/posts.js.map",
-      "sourceMapUrl": "/app/model/37c6526d27ac02e3e0dd27d192453fcda04044cd.map",
-      "size": 3729,
-      "hash": "37c6526d27ac02e3e0dd27d192453fcda04044cd"
+      "sourceMapUrl": "/app/model/eebb860498d6c0b390c61a44b7321b48899408c9.map",
+      "size": 4635,
+      "hash": "eebb860498d6c0b390c61a44b7321b48899408c9"
     },
     {
       "path": "merged-stylesheets.css",

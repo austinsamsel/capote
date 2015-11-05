@@ -28,23 +28,35 @@ if (Meteor.isClient) {                                                 // 3
       });                                                              //
       $('[name=title]').val('');                                       // 21
       $('[name=content]').val('');                                     // 22
+      Session.set('wordcount', 0);                                     // 23
+    },                                                                 //
+    'keyup [name=content]': function (e) {                             // 25
+      var wordsToCount = $('[name="content"]').val();                  // 26
+      Meteor.call('getWordcount', wordsToCount, function (err, results) {
+        if (err) {                                                     // 28
+          console.error(err);                                          // 29
+        } else {                                                       //
+          Session.set('wordcount', results);                           // 32
+        }                                                              //
+      });                                                              //
     }                                                                  //
   });                                                                  //
                                                                        //
-  Template.post.events({                                               // 26
-    'click .deletePost': function (e) {                                // 27
-      e.preventDefault();                                              // 28
-      var thisPostId = this._id;                                       // 29
-      Posts.remove(thisPostId);                                        // 30
+  Template.post.events({                                               // 38
+    'click .deletePost': function (e) {                                // 39
+      e.preventDefault();                                              // 40
+      var thisPostId = this._id;                                       // 41
+      Posts.remove(thisPostId);                                        // 42
     }                                                                  //
   });                                                                  //
                                                                        //
-  Template.wordcount.onRendered(function () {                          // 34
-    Session.set('wordcount', 0);                                       // 35
+  Template.wordcount.onRendered(function () {                          // 46
+    Session.set('wordcount', 0);                                       // 47
   });                                                                  //
-  Template.wordcount.helpers({                                         // 37
-    wordcount: function () {                                           // 38
-      return Session.get('wordcount');                                 // 39
+                                                                       //
+  Template.wordcount.helpers({                                         // 50
+    wordcount: function () {                                           // 51
+      return Session.get('wordcount');                                 // 52
     }                                                                  //
   });                                                                  //
 }                                                                      //

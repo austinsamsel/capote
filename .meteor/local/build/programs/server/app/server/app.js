@@ -20,13 +20,14 @@ if (Meteor.isServer) {                                                 // 1
     })()                                                               //
   });                                                                  //
                                                                        //
-  Meteor.call('getWordcount', 'hows it going world?', function (err, results) {
-    if (err) {                                                         // 12
-      console.error(err);                                              // 13
-    } else {                                                           //
-      console.log('HEY! it worked, it was ' + results + ' words!');    // 16
-    }                                                                  //
-  });                                                                  //
+  // Meteor.call('getWordcount', 'hows it going world?', function(err, results){
+  //   if(err){                                                        //
+  //     console.error(err);                                           //
+  //   }                                                               //
+  //   else{                                                           //
+  //     console.log('HEY! it worked, it was ' + results + ' words!');
+  //  }                                                                //
+  // });                                                               //
                                                                        //
   Meteor.startup(function () {                                         // 21
     if (Posts.find().count() === 0) {                                  // 22
