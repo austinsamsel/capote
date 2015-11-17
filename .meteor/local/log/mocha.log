@@ -55,3 +55,6 @@
 => Meteor server restarted
 [34mI20151117-14:51:14.260(-5)? [39m[velocity] Established connection with Velocity.
 [34mI20151117-14:51:18.751(-5)? [39mRunning mocha server tests
+[34mI20151117-16:13:07.701(-5)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+[34mI20151117-16:13:07.712(-5)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+Parent process ( 63713 ) is dead! Exiting mocha
