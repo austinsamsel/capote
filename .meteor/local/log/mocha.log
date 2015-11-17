@@ -3,104 +3,24 @@
 [[[[[ ~/Dropbox/DEV/apps-meteor-0_1/capote ]]]]]
 
 => Started proxy.
-[34mI20151104-21:53:52.104(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151104-21:53:52.133(-5)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151104-21:53:52.134(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151104-21:53:52.135(-5)? [39m** will still be sent to all clients.
-[34mI20151104-21:53:52.136(-5)? [39m**
-[34mI20151104-21:53:52.138(-5)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151104-21:53:52.138(-5)? [39m**
-[34mI20151104-21:53:52.138(-5)? [39m**   $ meteor remove autopublish
-[34mI20151104-21:53:52.139(-5)? [39m**
-[34mI20151104-21:53:52.139(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151104-21:53:52.139(-5)? [39m** for each collection that you want clients to see.
-[34mI20151104-21:53:52.142(-5)? [39m
-[34mI20151104-21:53:52.142(-5)? [39mHEY! it worked, it was 4 words!
-[34mI20151104-21:53:52.143(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:52390/
+[34mI20151117-12:19:25.237(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151117-12:19:25.239(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151117-12:19:25.239(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151117-12:19:25.239(-5)? [39m** will still be sent to all clients.
+[34mI20151117-12:19:25.239(-5)? [39m**
+[34mI20151117-12:19:25.239(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151117-12:19:25.239(-5)? [39m**
+[34mI20151117-12:19:25.239(-5)? [39m**   $ meteor remove autopublish
+[34mI20151117-12:19:25.240(-5)? [39m**
+[34mI20151117-12:19:25.240(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151117-12:19:25.240(-5)? [39m** for each collection that you want clients to see.
+[34mI20151117-12:19:25.240(-5)? [39m
+[34mI20151117-12:19:25.368(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:50523/
 => Started your app.
 
-=> App running at: http://localhost:52390/
-[34mI20151104-21:53:52.488(-5)? [39m[velocity] Established connection with Velocity.
-[34mI20151104-21:53:54.613(-5)? [39mRunning mocha server tests
-=> Server modified -- restarting...                                   [34mI20151104-21:54:20.688(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151104-21:54:20.689(-5)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151104-21:54:20.689(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151104-21:54:20.689(-5)? [39m** will still be sent to all clients.
-[34mI20151104-21:54:20.689(-5)? [39m**
-[34mI20151104-21:54:20.689(-5)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151104-21:54:20.690(-5)? [39m**
-[34mI20151104-21:54:20.690(-5)? [39m**   $ meteor remove autopublish
-[34mI20151104-21:54:20.690(-5)? [39m**
-[34mI20151104-21:54:20.690(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151104-21:54:20.690(-5)? [39m** for each collection that you want clients to see.
-[34mI20151104-21:54:20.691(-5)? [39m
-[34mI20151104-21:54:20.932(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:52390/
-=> Meteor server restarted
-[34mI20151104-21:54:21.248(-5)? [39m[velocity] Established connection with Velocity.
-[34mI20151104-21:54:22.882(-5)? [39mRunning mocha server tests
-=> Client modified -- refreshing
-[34mI20151104-21:54:54.931(-5)? [39mRunning mocha server tests
-=> Server modified -- restarting...                                   [34mI20151104-21:56:55.324(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151104-21:56:55.324(-5)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151104-21:56:55.325(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151104-21:56:55.325(-5)? [39m** will still be sent to all clients.
-[34mI20151104-21:56:55.325(-5)? [39m**
-[34mI20151104-21:56:55.325(-5)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151104-21:56:55.325(-5)? [39m**
-[34mI20151104-21:56:55.325(-5)? [39m**   $ meteor remove autopublish
-[34mI20151104-21:56:55.325(-5)? [39m**
-[34mI20151104-21:56:55.326(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151104-21:56:55.326(-5)? [39m** for each collection that you want clients to see.
-[34mI20151104-21:56:55.326(-5)? [39m
-[34mI20151104-21:56:55.589(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:52390/
-=> Meteor server restarted
-[34mI20151104-21:56:55.882(-5)? [39m[velocity] Established connection with Velocity.
-[34mI20151104-21:56:58.325(-5)? [39mRunning mocha server tests
-=> Server modified -- restarting...                                   => Errors prevented startup:
-   
-   While processing files with ecmascript (for target web.browser):
-   model/posts.js:34:3: model/posts.js: Unexpected token (34:3)
-   
-   While processing files with ecmascript (for target os.osx.x86_64):
-   model/posts.js:34:3: model/posts.js: Unexpected token (34:3)
-   
-=> Your application has errors. Waiting for file change.
-=> Modified -- restarting.
-[34mI20151104-21:58:05.039(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151104-21:58:05.039(-5)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151104-21:58:05.040(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151104-21:58:05.040(-5)? [39m** will still be sent to all clients.
-[34mI20151104-21:58:05.040(-5)? [39m**
-[34mI20151104-21:58:05.040(-5)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151104-21:58:05.040(-5)? [39m**
-[34mI20151104-21:58:05.040(-5)? [39m**   $ meteor remove autopublish
-[34mI20151104-21:58:05.040(-5)? [39m**
-[34mI20151104-21:58:05.041(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151104-21:58:05.041(-5)? [39m** for each collection that you want clients to see.
-[34mI20151104-21:58:05.041(-5)? [39m
-[34mI20151104-21:58:05.288(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:52390/
-=> Meteor server restarted
-[34mI20151104-21:58:05.477(-5)? [39m[velocity] Established connection with Velocity.
-[34mI20151104-21:58:13.879(-5)? [39mRunning mocha server tests
-=> Client modified -- refreshing
-[34mI20151104-21:59:30.094(-5)? [39mRunning mocha server tests
-=> Server modified -- restarting...                                   [34mI20151104-21:59:41.634(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151104-21:59:41.635(-5)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151104-21:59:41.635(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151104-21:59:41.635(-5)? [39m** will still be sent to all clients.
-[34mI20151104-21:59:41.636(-5)? [39m**
-[34mI20151104-21:59:41.636(-5)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151104-21:59:41.636(-5)? [39m**
-[34mI20151104-21:59:41.636(-5)? [39m**   $ meteor remove autopublish
-[34mI20151104-21:59:41.636(-5)? [39m**
-[34mI20151104-21:59:41.636(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151104-21:59:41.636(-5)? [39m** for each collection that you want clients to see.
-[34mI20151104-21:59:41.637(-5)? [39m
-[34mI20151104-21:59:42.037(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:52390/
-=> Meteor server restarted
-[34mI20151104-21:59:45.134(-5)? [39m[velocity] Established connection with Velocity.
-[34mI20151104-21:59:45.267(-5)? [39mRunning mocha server tests
-[34mI20151104-21:59:50.501(-5)? [39mRunning mocha server tests
-[34mI20151104-21:59:53.216(-5)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
-[34mI20151104-21:59:53.236(-5)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
-Parent process ( 96200 ) is dead! Exiting mocha
+=> App running at: http://localhost:50523/
+[34mI20151117-12:19:25.534(-5)? [39m[velocity] Established connection with Velocity.
+[34mI20151117-12:20:03.823(-5)? [39mRunning mocha server tests
+[34mI20151117-12:20:24.018(-5)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+[34mI20151117-12:20:24.033(-5)? [39mstream error Network error: ws://localhost:3000/websocket: connect ECONNREFUSED
+Parent process ( 47672 ) is dead! Exiting mocha
