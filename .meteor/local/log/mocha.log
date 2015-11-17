@@ -39,3 +39,19 @@
 [34mI20151117-14:17:33.790(-5)? [39mRunning mocha server tests
 => Client modified -- refreshing
 [34mI20151117-14:18:08.148(-5)? [39mRunning mocha server tests
+=> Server modified -- restarting...                                   [34mI20151117-14:51:13.538(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151117-14:51:13.538(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151117-14:51:13.539(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151117-14:51:13.539(-5)? [39m** will still be sent to all clients.
+[34mI20151117-14:51:13.540(-5)? [39m**
+[34mI20151117-14:51:13.540(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151117-14:51:13.540(-5)? [39m**
+[34mI20151117-14:51:13.541(-5)? [39m**   $ meteor remove autopublish
+[34mI20151117-14:51:13.541(-5)? [39m**
+[34mI20151117-14:51:13.542(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151117-14:51:13.542(-5)? [39m** for each collection that you want clients to see.
+[34mI20151117-14:51:13.542(-5)? [39m
+[34mI20151117-14:51:13.914(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:54726/
+=> Meteor server restarted
+[34mI20151117-14:51:14.260(-5)? [39m[velocity] Established connection with Velocity.
+[34mI20151117-14:51:18.751(-5)? [39mRunning mocha server tests

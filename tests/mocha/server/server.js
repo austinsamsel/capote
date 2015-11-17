@@ -14,7 +14,6 @@ if (!(typeof MochaWeb === 'undefined')){
       });
       it("saves the goal in the database", function(){
         Meteor.flush();
-        //chai.assert.equal($('[name="goal"]').val(), 1)
         chai.assert(Goals.findOne().dailyGoal == 1);
       });
     });
