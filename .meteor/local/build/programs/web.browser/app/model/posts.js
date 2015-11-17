@@ -59,6 +59,14 @@ if (Meteor.isClient) {                                                 // 3
       return Session.get('wordcount');                                 // 52
     }                                                                  //
   });                                                                  //
+                                                                       //
+  Template.createPost.helpers({                                        // 56
+    enoughWords: function () {                                         // 57
+      var wordcount = Session.get('wordcount');                        // 58
+      var theGoal = Goals.findOne().dailyGoal;                         // 59
+      return wordcount >= theGoal;                                     // 60
+    }                                                                  //
+  });                                                                  //
 }                                                                      //
 /////////////////////////////////////////////////////////////////////////
 

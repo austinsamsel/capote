@@ -6,6 +6,7 @@
 <body>
   {{> createPost}}
   {{> wordcount}}
+  {{> dailyGoal}}
   <div class="container">
     {{#each posts}}
       {{> post}}
@@ -23,11 +24,15 @@
 <template name="createPost">
   <div class="create-post">
     <form>
-      Create a post:
-      <input type="text" placeholder="add a title" name="title">
-      <textarea placeholder="write your words here" name="content"></textarea>
-      <input type="submit" value="Submit" />
-   </form>
+  	  Create a post:
+  	  <input type="text" placeholder="add a title" name="title">
+  	  <textarea placeholder="write your words here" name="content"></textarea>
+  	  {{#if enoughWords}}
+  	    <input type="submit" value="Submit" />
+  	  {{else}}
+  	    Keep writing!
+  	  {{/if}}
+  	</form>
  </div>
 </template>
 
@@ -35,4 +40,12 @@
   <div class="wordcount-msg">
     word count: <span class="wordcount-num">{{wordcount}}</span>
   </div>
+</template>
+
+<template name="dailyGoal">
+  <div class="dailyGoal">
+    <form>
+      Your daily goal: <input value="{{dailyGoal}}" placeholder="your goal" name="goal"> words.
+   </form>
+ </div>
 </template>

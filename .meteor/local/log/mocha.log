@@ -3,27 +3,39 @@
 [[[[[ ~/Dropbox/DEV/apps-meteor-0_1/capote ]]]]]
 
 => Started proxy.
-[34mI20151117-12:21:49.002(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
-[34mI20151117-12:21:49.004(-5)? [39m** you still have autopublish turned on. Because autopublish is still
-[34mI20151117-12:21:49.004(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
-[34mI20151117-12:21:49.005(-5)? [39m** will still be sent to all clients.
-[34mI20151117-12:21:49.005(-5)? [39m**
-[34mI20151117-12:21:49.005(-5)? [39m** Turn off autopublish by removing the autopublish package:
-[34mI20151117-12:21:49.005(-5)? [39m**
-[34mI20151117-12:21:49.006(-5)? [39m**   $ meteor remove autopublish
-[34mI20151117-12:21:49.006(-5)? [39m**
-[34mI20151117-12:21:49.007(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
-[34mI20151117-12:21:49.007(-5)? [39m** for each collection that you want clients to see.
-[34mI20151117-12:21:49.007(-5)? [39m
-[34mI20151117-12:21:49.008(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:50895/
+[34mI20151117-14:09:39.207(-5)? [39m** You've set up some data subscriptions with Meteor.publish(), but
+[34mI20151117-14:09:39.208(-5)? [39m** you still have autopublish turned on. Because autopublish is still
+[34mI20151117-14:09:39.209(-5)? [39m** on, your Meteor.publish() calls won't have much effect. All data
+[34mI20151117-14:09:39.209(-5)? [39m** will still be sent to all clients.
+[34mI20151117-14:09:39.209(-5)? [39m**
+[34mI20151117-14:09:39.209(-5)? [39m** Turn off autopublish by removing the autopublish package:
+[34mI20151117-14:09:39.209(-5)? [39m**
+[34mI20151117-14:09:39.210(-5)? [39m**   $ meteor remove autopublish
+[34mI20151117-14:09:39.210(-5)? [39m**
+[34mI20151117-14:09:39.210(-5)? [39m** .. and make sure you have Meteor.publish() and Meteor.subscribe() calls
+[34mI20151117-14:09:39.210(-5)? [39m** for each collection that you want clients to see.
+[34mI20151117-14:09:39.210(-5)? [39m
+[34mI20151117-14:09:39.382(-5)? [39mMOCHA MIRROR LISTENING AT http://localhost:54726/
 => Started your app.
 
-=> App running at: http://localhost:50895/
-[34mI20151117-12:21:49.348(-5)? [39m[velocity] Established connection with Velocity.
-[34mI20151117-12:21:51.622(-5)? [39mRunning mocha server tests
+=> App running at: http://localhost:54726/
+[34mI20151117-14:09:39.674(-5)? [39m[velocity] Established connection with Velocity.
+[34mI20151117-14:09:42.504(-5)? [39mRunning mocha server tests
 => Client modified -- refreshing
-[34mI20151117-12:26:13.914(-5)? [39mRunning mocha server tests
-=> Client modified -- refreshing=> Client modified -- refreshing (x2)
-[34mI20151117-12:28:31.044(-5)? [39mRunning mocha server tests
+[34mI20151117-14:13:33.994(-5)? [39mRunning mocha server tests
 => Client modified -- refreshing
-[34mI20151117-12:28:59.366(-5)? [39mRunning mocha server tests
+[34mI20151117-14:14:42.427(-5)? [39mRunning mocha server tests
+[34mI20151117-14:14:52.585(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151117-14:15:38.453(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151117-14:16:24.411(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151117-14:16:34.328(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151117-14:16:54.348(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151117-14:17:24.893(-5)? [39mRunning mocha server tests
+[34mI20151117-14:17:33.790(-5)? [39mRunning mocha server tests
+=> Client modified -- refreshing
+[34mI20151117-14:18:08.148(-5)? [39mRunning mocha server tests

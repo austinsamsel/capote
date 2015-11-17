@@ -20,7 +20,7 @@ if (Meteor.isClient) {
       });
       $('[name=title]').val('');
       $('[name=content]').val('');
-      Session.set('wordcount', 0); 
+      Session.set('wordcount', 0);
     },
     'keyup [name=content]': function(e){
       var wordsToCount = $('[name="content"]').val();
@@ -50,6 +50,14 @@ if (Meteor.isClient) {
   Template.wordcount.helpers({
     wordcount: function(){
       return Session.get('wordcount');
+    }
+  });
+
+  Template.createPost.helpers({
+    enoughWords: function(){
+      var wordcount = Session.get('wordcount');
+      var theGoal = Goals.findOne().dailyGoal;
+      return wordcount >= theGoal
     }
   });
 

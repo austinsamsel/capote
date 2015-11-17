@@ -339,6 +339,10 @@
       "path": "packages/global-imports.js"
     },
     {
+      "sourceMap": "app/model/goals.js.map",
+      "path": "app/model/goals.js"
+    },
+    {
       "sourceMap": "app/model/posts.js.map",
       "path": "app/model/posts.js"
     },

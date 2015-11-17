@@ -19,6 +19,12 @@ if (Meteor.isServer) {
 
 
   Meteor.startup(function () {
+    if (Goals.find().count() === 0) {
+      Goals.insert({
+        dailyGoal: 1,
+        createdAt: new Date(),
+      });
+    };
     if (Posts.find().count() === 0) {
       Posts.insert({
     	  title: "Neutra messenger bag",
